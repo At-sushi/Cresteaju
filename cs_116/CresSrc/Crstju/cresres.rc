@@ -1,0 +1,259 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CFG DIALOG DISCARDABLE  0, 0, 294, 275
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cresteajuコンフィグ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,255,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,180,255,50,14
+    PUSHBUTTON      "デフォルト",IDDEFAULT,235,255,50,14
+    GROUPBOX        "DirectX",IDC_STATIC,5,10,140,115
+    CONTROL         "DirectDrawHALを使用する",IDC_DDHAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,25,110,15
+    CONTROL         "Direct3DHALを使用する",IDC_D3DHAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,45,110,15
+    CONTROL         "DirectSoundを使用する",IDC_DS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,65,110,15
+    CONTROL         "Zバッファーを使用する",IDC_ZBUFFER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,85,110,15
+    GROUPBOX        "効果音",IDC_STATIC,150,10,140,115
+    CONTROL         "効果音を鳴らす",IDC_SOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,165,30,110,15
+    GROUPBOX        "その他",IDC_STATIC,150,135,135,110
+    GROUPBOX        "音量",IDC_STATIC,160,65,120,44
+    LTEXT           "大",IDC_STATIC,265,85,8,10,SS_CENTERIMAGE
+    LTEXT           "小",IDC_STATIC,165,85,8,10,SS_CENTERIMAGE
+    GROUPBOX        "MIDI",IDC_STATIC,5,135,140,110
+    CONTROL         "MIDIを使用する",IDC_MIDI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,150,110,15
+    COMBOBOX        IDC_MIDITYPE,25,210,100,55,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "MIDIデータタイプ",IDC_STATIC,15,190,120,45
+    CONTROL         "ジョイスティックを使用する",IDC_JOY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,165,150,110,15
+    CONTROL         "途中再生をする",IDC_OFFSETPLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,170,110,15
+    SCROLLBAR       IDC_VOLUME,175,85,85,10
+    CONTROL         "テクスチャ補間をする",IDC_TEXTURELINER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,165,170,110,15
+    CONTROL         "戦闘画面をワイヤーフレーム表示",IDC_WIRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,165,190,110,15
+    CONTROL         "リフレッシュレートが80Hz以上の場合、強制的に60Hzにする",
+                    IDC_FORCEREFRESHRATE,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,165,205,110,25
+    CONTROL         "3D描画時にウェイトを取る",IDC_DRAWPRIMITIVEWAIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,105,110,15
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ﾀﾞｲｱﾛｸﾞ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,24,50,14
+END
+
+JUKE DIALOG DISCARDABLE  0, 0, 175, 169
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "CresJuke!!"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    PUSHBUTTON      "End",IDC_JUKEEND,125,90,40,15
+    PUSHBUTTON      "Play",IDC_PLAY,85,30,30,15
+    PUSHBUTTON      "Stop",IDC_STOP,85,50,30,15
+    PUSHBUTTON      "＞＞",IDC_NEXT,125,40,30,15
+    PUSHBUTTON      "＜＜",IDC_BEFORE,45,40,30,15
+    COMBOBOX        IDC_LIST,45,10,110,200,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_COMMENT,5,110,160,50,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Version",IDC_ABOUT,125,70,40,15
+    CONTROL         "",IDC_CRESLOGO,"Static",SS_BLACKRECT,5,75,110,25
+    CONTROL         "",IDC_CHARA,"Static",SS_BLACKRECT,15,40,18,21
+END
+
+JukeAbout DIALOG DISCARDABLE  0, 0, 199, 55
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,140,35,50,14
+    LTEXT           "CresJuke!! 1.00\n  Copyright(C) 2001 Shou/ShogoKawai All rights reserved.",
+                    IDC_STATIC,10,10,180,20
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,6,0
+ PRODUCTVERSION 1,1,6,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "Fantasy RPG Cresteaju\0"
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "cres\0"
+            VALUE "FileVersion", "1, 1, 6, 0\0"
+            VALUE "InternalName", "cres\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001 Shou/Shogo Kawai All rights reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "cres.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Cresteaju\0"
+            VALUE "ProductVersion", "1.16\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "CFG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    "JUKE", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    "JukeAbout", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "cresban.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
